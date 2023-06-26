@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ViewPager2Issue" parent="Theme.Material3.DynamicColors.DayNight">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <!-- Primary brand color. -->
+
+        <!-- Status bar color. -->
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor" tools:targetApi="27">@android:color/transparent
+        </item>
+        <item name="android:windowLightStatusBar">?attr/isLightTheme</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">?attr/isLightTheme</item>
+
+    </style>
+
+    <style name="Theme.ViewPager2Issue" parent="Base.Theme.ViewPager2Issue" />
+
+</resources>
